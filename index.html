@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b1b">
+  <title>SPACE EXPLORER | Discover the Universe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="space-bg" aria-hidden="true">
+    <div class="stars stars-one"></div>
+    <div class="stars stars-two"></div>
+    <div class="nebula"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Space Explorer home">
+      <span class="brand-icon">✦</span>
+      <span>SPACE<span class="brand-light">EXPLORER</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#universe">Universe</a>
+      <a href="#missions">Missions</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="sound-btn" id="starsBtn" type="button">✧ <span>Starfield: ON</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="universe">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> YOUR JOURNEY BEGINS HERE</p>
+        <h1>Explore the<br><span>unknown.</span></h1>
+        <p class="hero-text">Travel beyond the familiar. Discover incredible worlds, explore distant planets and experience the beauty of our solar system.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#planet-lab">Start exploring <span>↗</span></a>
+          <a class="text-btn" href="#missions">View missions <span>→</span></a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>8</strong><span>Planets</span></div>
+          <div><strong>1</strong><span>Solar system</span></div>
+          <div><strong>∞</strong><span>Possibilities</span></div>
+        </div>
+      </div>
+
+      <div class="solar-stage" aria-label="Animated illustration of the solar system">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+        <div class="sun"><div class="sun-core"></div></div>
+        <div class="orbiting-planet mercury-orbit"><div class="planet mercury"></div></div>
+        <div class="orbiting-planet venus-orbit"><div class="planet venus"></div></div>
+        <div class="orbiting-planet earth-orbit"><div class="planet earth"><span></span></div></div>
+        <div class="orbiting-planet mars-orbit"><div class="planet mars"></div></div>
+        <div class="orbiting-planet jupiter-orbit"><div class="planet jupiter"></div></div>
+        <div class="stage-label label-sun">SOL / 01</div>
+        <div class="stage-label label-earth">EARTH</div>
+        <div class="stage-caption">THE SOLAR SYSTEM <span>•</span> 3D ORBIT VIEW</div>
+      </div>
+    </section>
+
+    <section class="planet-section section-wrap" id="planet-lab">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / PLANET DATABASE</p>
+          <h2>Choose your <span>destination.</span></h2>
+        </div>
+        <p class="section-note">Select a planet to reveal its explorer profile.</p>
+      </div>
+
+      <div class="planet-layout">
+        <div class="planet-picker" id="planetPicker">
+          <button class="planet-choice active" data-planet="earth"><span class="mini-planet earth-mini"></span><span><b>Earth</b><small>Our home</small></span><i>↗</i></button>
+          <button class="planet-choice" data-planet="mars"><span class="mini-planet mars-mini"></span><span><b>Mars</b><small>The red planet</small></span><i>↗</i></button>
+          <button class="planet-choice" data-planet="jupiter"><span class="mini-planet jupiter-mini"></span><span><b>Jupiter</b><small>Gas giant</small></span><i>↗</i></button>
+          <button class="planet-choice" data-planet="saturn"><span class="mini-planet saturn-mini"></span><span><b>Saturn</b><small>Ringed wonder</small></span><i>↗</i></button>
+          <button class="planet-choice" data-planet="neptune"><span class="mini-planet neptune-mini"></span><span><b>Neptune</b><small>Ice giant</small></span><i>↗</i></button>
+        </div>
+
+        <article class="planet-card" id="planetCard">
+          <div class="planet-visual">
+            <div class="planet-glow"></div>
+            <div class="feature-planet earth-large" id="featurePlanet"></div>
+            <span class="planet-coordinate" id="planetCoordinate">00° 00' N / 00° 00' E</span>
+          </div>
+          <div class="planet-info">
+            <p class="eyebrow" id="planetType">TERRESTRIAL PLANET</p>
+            <h3 id="planetName">Earth</h3>
+            <p id="planetDescription">Our home planet is the only known world with liquid water on its surface and life as we know it.</p>
+            <div class="planet-facts">
+              <div><small>DIAMETER</small><strong id="planetDiameter">12,742 km</strong></div>
+              <div><small>DAY LENGTH</small><strong id="planetDay">24 hours</strong></div>
+              <div><small>MOONS</small><strong id="planetMoons">1</strong></div>
+            </div>
+            <button class="primary-btn explore-btn" id="exploreBtn" type="button">Explore this planet <span>↗</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mission-section section-wrap" id="missions">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 / MISSION CONTROL</p><h2>Beyond the <span>horizon.</span></h2></div>
+        <p class="section-note">A few milestones in humanity's exploration of space.</p>
+      </div>
+      <div class="mission-grid">
+        <article class="mission-card">
+          <div class="mission-number">01</div><div class="mission-icon">◉</div>
+          <p class="eyebrow">LUNAR EXPLORATION</p><h3>Return to the Moon</h3>
+          <p>Study the Moon and prepare for future journeys deeper into space.</p><span class="mission-tag">THE MOON</span>
+        </article>
+        <article class="mission-card featured-mission">
+          <div class="mission-number">02</div><div class="mission-icon">✧</div>
+          <p class="eyebrow">PLANETARY SCIENCE</p><h3>Discover Mars</h3>
+          <p>Explore the red planet to understand its past, geology and environment.</p><span class="mission-tag">MARS</span>
+        </article>
+        <article class="mission-card">
+          <div class="mission-number">03</div><div class="mission-icon">⌁</div>
+          <p class="eyebrow">DEEP SPACE</p><h3>Look beyond</h3>
+          <p>Use powerful observatories to study distant stars and galaxies.</p><span class="mission-tag">THE COSMOS</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section section-wrap" id="about">
+      <div class="quote-mark">“</div>
+      <p>Somewhere, something incredible is waiting to be known.</p>
+      <span>— CARL SAGAN</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#"><span class="brand-icon">✦</span><span>SPACE<span class="brand-light">EXPLORER</span></span></a>
+    <p>Designed for curious minds. Keep looking up.</p>
+    <span class="footer-copy">© 2026 SPACE EXPLORER</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
